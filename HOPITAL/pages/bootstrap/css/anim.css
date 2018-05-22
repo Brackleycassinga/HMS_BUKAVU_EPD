@@ -1,0 +1,67 @@
+
+
+
+#AnimAllonge
+{
+   position:relative;
+   left:20px;
+   top:20px;
+   padding:0px 10px;
+   border-radius:25px;
+   background-color:blue;
+   animation-name: AnimationAllonge; -webkit-animation-name: AnimationAllonge;
+   -moz-animation-name: AnimationAllonge; -o-animation-name: AnimationAllonge;
+   animation-duration: 5s; -webkit-animation-duration: 5s;
+   -moz-animation-duration: 5s; -o-animation-duration: 5s;
+   animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;
+   -moz-animation-iteration-count: infinite; -o-animation-iteration-count: infinite;
+   animation-timing-function:linear; -webkit-animation-timing-function:linear;
+   -moz-animation-timing-function:linear; -o-animation-timing-function:linear;
+   animation-direction:alternate; -webkit-animation-direction:alternate;
+   -moz-animation-direction:alternate; -o-animation-direction:alternate;
+}
+
+@keyframes AnimationAllonge {
+   0% {width: 500px; background-color:transparent;}
+   100% {width: 1200px; background-color:transparent;} }
+@-webkit-keyframes AnimationAllonge {
+   0% {width: 500px; background-color:transparent;}
+   100% {width: 1200px; background-color:transparent;} }
+@-moz-keyframes AnimationAllonge {
+   0% {width: 500px; background-color:transparent;}
+   100% {width: 1200px; background-color:transparent;} }
+@-o-keyframes AnimationAllonge {
+   0% {width: 500px; background-color:transparent;}
+   100% {width: 1200px; background-color:transparent;} } 
+   
+   
+ .divRotation{
+   border:solid 2px silver; border-radius:77px;
+   background-color:lightsteelblue;
+   text-align:center; margin:10px 30px;
+   display:inline-block;
+
+   animation-name:rotationY; animation-duration:10s; animation-iteration-count:infinite; animation-timing-function:linear;
+   -webkit-animation-name:rotationY; -webkit-animation-duration:10s; -webkit-animation-iteration-count:infinite; -webkit-animation-timing-function:linear;
+   -moz-animation-name:rotationY; -moz-animation-duration:10s; -moz-animation-iteration-count:infinite; -moz-animation-timing-function:linear;
+   -o-animation-name:rotationY; -o-animation-duration:10s; -o-animation-iteration-count:infinite; -o-animation-timing-function:linear;
+}
+.backFace{
+   backface-visibility:hidden;
+   -webkit-backface-visibility:hidden;
+   -moz-backface-visibility:hidden;
+   -o-backface-visibility:hidden;
+}
+
+@keyframes rotationY{
+   from {transform:rotateY(0deg);} to {transform:rotateY(359deg);}
+}
+@-webkit-keyframes rotationY{
+   from {-webkit-transform:rotateY(0deg);} to {-webkit-transform:rotateY(359deg);}
+}
+@-moz-keyframes rotationY{
+   from {-moz-transform:rotateY(0deg);} to {-moz-transform:rotateY(359deg);}
+}
+@-o-keyframes rotationY{
+   from {-o-transform:rotateY(0deg);} to {-o-transform:rotateY(359deg);}
+} 
